@@ -1,0 +1,5 @@
+.menuItem:hover{
+    -fx-border-color: #660099;
+    -fx-background-color:  #AAAAAA;
+    -fx-border-width: 0px 0px 3px 0px;
+}

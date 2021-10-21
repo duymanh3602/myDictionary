@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="490.0" prefWidth="830.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary_ver3.Offline">
+   <children>
+      <TextArea fx:id="inputWord" layoutX="25.0" layoutY="45.0" prefHeight="200.0" prefWidth="650.0" promptText="Nhập từ cần DỊCH vào đây! :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextArea>
+      <TextArea fx:id="resultTxt" layoutX="25.0" layoutY="250.0" prefHeight="200.0" prefWidth="650.0" promptText="Kết quả hiện ra ở đây! ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextArea>
+      <Button fx:id="translateButton" layoutX="700.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#onlineSearch" prefHeight="40.0" prefWidth="120.0" text="Translate">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TextField fx:id="modeText" layoutX="700.0" layoutY="86.0" prefHeight="40.0" prefWidth="120.0" text="ENG to VIE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <ToggleButton fx:id="modeButton" layoutX="700.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#setModeTrans" text="MODE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ToggleButton>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="712.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/dictionary.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="625.0" layoutY="200.0" onMouseClicked="#voice" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/medium-volume.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="625.0" layoutY="405.0" onMouseClicked="#voice2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/medium-volume.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="100.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #66FFFF;" />
+   </children>
+</AnchorPane>

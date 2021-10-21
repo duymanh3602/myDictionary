@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="490" prefWidth="830" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary_ver3.About">
+   <children>
+      <Label layoutX="67.0" layoutY="14.0" text="HƯỚNG DẪN SỬ DỤNG CHƯƠNG TRÌNH">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Text layoutX="67.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Các chức năng CHÍNH:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Tra từ.">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Nhập từ cần tra vào ô Tìm Kiếm, chọn từ cần tìm kiếm ở Danh Sách phía dưới để tra: nghĩa, phát âm, từ loại của từ đó." wrappingWidth="673.3671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Chọn vào biểu tượng cái &quot;Loa&quot; hoặc nút &quot;Spell&quot; để nghe phát âm của từ đó.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Thêm từ vào từ điển.">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Nhập từ bạn muốn thêm vào ô Thêm Từ, nếu từ đã tồn tại ô Thêm Từ sẽ có khung màu đỏ, ngược lại ô sẽ có khung màu xanh." wrappingWidth="673.3671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Nếu từ chưa tồn tại nút ADD sẽ hiện lên, bấm vào đó và nhập thông tin còn lại của từ, nhấn Done! để hoàn thành việc thêm từ." wrappingWidth="673.3671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Sửa hoặc Xóa từ trong từ điển.">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Chọn mục Edit, tìm kiếm từ cần sửa, chọn từ cần sửa ở danh sách Tìm kiếm bên dưới, một thông báo sẽ hiện ra, chọn Edit, phần sửa chữa sẽ hiện lên, bạn có thể sửa chữa từ, nhấn Done để hoàn thành hoặc Cancel để khôi phục về ban đầu và kết thúc." wrappingWidth="673.3671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Nếu muốn xóa, bạn nhấn vào từ cần Xóa, một Dialog sẽ hiện lên, chọn mục Delete để xóa từ đó.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="count" layoutX="67.0" layoutY="436.0" prefHeight="30.0" prefWidth="305.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="67.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Với Dịch Online, nhập từ vào ô tìm kiếm, bấm Translate và đợi chương trình xử lý, kết quả sẽ hiện ra trong phần Kết quả, Để điều chỉnh Ngôn ngữ dịch, chọn vào nút Mode." wrappingWidth="673.3671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

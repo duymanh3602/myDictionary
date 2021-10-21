@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="490" prefWidth="830" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary_ver3.Home">
+   <children>
+      <ImageView fitHeight="170.0" fitWidth="200.0" layoutX="315.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/translation.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="327.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20020438 || 20020460">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Pane layoutX="80.0" layoutY="304.0" prefHeight="93.0" prefWidth="320.0" style="-fx-background-color: #CCFFFF;" />
+      <Pane layoutX="400.0" layoutY="304.0" prefHeight="93.0" prefWidth="320.0" style="-fx-background-color: #66FFCC;">
+         <children>
+            <Label layoutX="-308.0" text="TỪ ĐIỂN ANH - VIỆT">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="490" prefWidth="830.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary_ver3.Search">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="830.0">
+         <children>
+            <TextField fx:id="searchWord" layoutX="30.0" layoutY="50.0" onKeyTyped="#searchResult" prefHeight="100.0" prefWidth="375.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Text layoutX="45.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập từ cần tìm kiếm:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Text>
+            <ImageView fx:id="speaker" fitHeight="30.0" fitWidth="30.0" layoutX="365.0" layoutY="110.0" onMouseClicked="#speakerShow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/medium-volume.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="45.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kết quả tìm kiếm:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="345.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nghĩa:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Pane layoutY="150.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #66FFFF;" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="597.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/google.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ListView fx:id="searchResult" layoutX="30.0" layoutY="200.0" onMouseClicked="#wordSearching" onMouseDragEntered="#wordSearching" prefHeight="270.0" prefWidth="300.0">
+         <effect>
+            <DropShadow />
+         </effect></ListView>
+      <TextArea fx:id="vieResult" layoutX="340.0" layoutY="200.0" prefHeight="270.0" prefWidth="465.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="17.0" />
+         </font></TextArea>
+      <Button layoutX="680.0" layoutY="200.0" mnemonicParsing="false" onAction="#spellWord" text="SPELL">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

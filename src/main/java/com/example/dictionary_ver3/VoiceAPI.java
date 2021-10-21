@@ -44,8 +44,8 @@ public class VoiceAPI {
 
     //https://stackoverflow.com/questions/2416935/how-to-play-wav-files-with-java
     public static void getVoiceEng(String text) {
-        String myAPIUrl = "https://api.au-syd.text-to-speech.watson.cloud.ibm.com/instances/174dc2d3-1c8d-48e6-b74d-a9094c96cc51";
-        IamAuthenticator authenticator = new IamAuthenticator("i_CxVjxprUzHkXrSeZget9f-l4jdPTPnYzEfn7rYIoze");
+        String myAPIUrl = "{api-ibm-wason-tts-url}";
+        IamAuthenticator authenticator = new IamAuthenticator("{api-ibm-watson-tts-key}");
         TextToSpeech textToSpeech = new TextToSpeech(authenticator);
         textToSpeech.setServiceUrl(myAPIUrl);
 
@@ -78,7 +78,7 @@ public class VoiceAPI {
     }
 
     public static void getVoiceVie(String text) throws Exception {
-        VoiceProvider tts = new VoiceProvider("1dcdf6704b26484589e66302932600f1");
+        VoiceProvider tts = new VoiceProvider("{voiceRSS-api-key}");
 
         VoiceParameters params = new VoiceParameters(text, Languages.Vietnamese);
         params.setCodec(AudioCodec.WAV);

@@ -133,9 +133,9 @@ public class DictionaryManagement {
         }
     }
     public static String getOnline(String translateTxt,String mode) {
-        IamAuthenticator authenticator = new IamAuthenticator("y0EfLAzdRLb_OHMDaQz73hQOU6_jHbIivmlP30J_sdXk");
+        IamAuthenticator authenticator = new IamAuthenticator("{api-ibm-watson}");
         LanguageTranslator languageTranslator = new LanguageTranslator("2018-05-01", authenticator);
-        languageTranslator.setServiceUrl("https://api.au-syd.language-translator.watson.cloud.ibm.com/instances/abde69b0-8fce-4fa3-ae5c-6291fe1363a7");
+        languageTranslator.setServiceUrl("{api-ibm-watson-url}");
         String tempTxt = "";
         if (mode.equals("en-vi")) {
             TranslateOptions translateOptions = new TranslateOptions.Builder()

@@ -101,11 +101,6 @@
                   </ImageView>
                </children>
             </Pane>
-            <Text layoutX="88.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20020438 || 20020460">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Text>
          </children>
       </Pane>
    </left>

@@ -15,11 +15,6 @@
             <Image url="@../image/translation.png" />
          </image>
       </ImageView>
-      <Text layoutX="327.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20020438 || 20020460">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
       <Pane layoutX="80.0" layoutY="304.0" prefHeight="93.0" prefWidth="320.0" style="-fx-background-color: #CCFFFF;" />
       <Pane layoutX="400.0" layoutY="304.0" prefHeight="93.0" prefWidth="320.0" style="-fx-background-color: #66FFCC;">
          <children>
